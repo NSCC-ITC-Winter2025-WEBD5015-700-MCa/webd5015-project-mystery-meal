@@ -12,6 +12,7 @@ import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
+import MysteryMeal from "@/components/MysteryMeal";
 
 export const metadata: Metadata = {
   title: "Play Next.js - SaaS Starter Kit and Boilerplate for Next.js",
@@ -25,16 +26,17 @@ export default function Home() {
     <main>
       <ScrollUp />
       <Hero />
-      <Features />
-      <About />
-      <CallToAction />
+      <MysteryMeal />
+      {/* <Features /> */}
+      {/* <About />
+      <CallToAction /> */}
       <Pricing />
-      <Testimonials />
+      {/* <Testimonials />
       <Faq />
       <Team />
       <HomeBlogSection posts={posts} />
       <Contact />
-      <Clients />
+      <Clients /> */}
     </main>
   );
 }
