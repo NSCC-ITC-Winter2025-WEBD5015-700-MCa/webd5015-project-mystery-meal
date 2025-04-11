@@ -11,7 +11,7 @@ import menuData from "./menuData";
 const Header = () => {
   const { data: session } = useSession();
 
-  console.log("session", session);
+  // console.log("session", session);
 
   const pathUrl = usePathname();
   // Navbar toggle

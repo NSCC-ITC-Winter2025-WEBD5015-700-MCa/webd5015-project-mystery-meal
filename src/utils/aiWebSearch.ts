@@ -52,7 +52,8 @@ export async function fetchResponse(searchData: string) {
               "type": "text",
               "text": `
                 Please provide information exclusively related to food specific to the given location.
-                Here is the list of restaurants and use this as search context: ${searchDataSample}.
+                Here is the list json object of restaurants and use this as search context: 
+                ${searchDataSample}.
                 Here is the user prompt: ${userInputPrompt},
                 if the prompt is not related to food, or the provided search context then please respond with "please try again".
                 otherwise, respond with the name of a restaurant from the search context.

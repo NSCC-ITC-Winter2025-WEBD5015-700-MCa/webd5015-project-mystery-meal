@@ -10,12 +10,10 @@ export async function GET(req: Request) {
     const searchOutput = await fetchResponse(searchInput || "");
     console.log("🚀 ~ GET ~ searchOutput:", searchOutput)
 
-    // Return the response with a 200 status
     return NextResponse.json(searchOutput, { status: 200 });
   } catch (error) {
     console.error("API Error:", error);
 
-    // Return an error response with a 500 status
     return new NextResponse(
       error instanceof Error ? error.message : "Failed to fetch places",
       { status: 500 },
